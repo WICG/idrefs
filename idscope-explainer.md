@@ -45,7 +45,7 @@ Solutions in this space should:
 - Allow for an efficiently implemented algorithm
 
 ## The `idscope` idea
-The `idscope` attribute (name bikesheddable etc), is a boolean global attribute that can go on any HTML/SVG/MathML element.
+The `idscope` attribute (name bikesheddable etc), is a boolean global attribute that can go on any element (in any namespace).
 When used, it changes the order in which internal IDREFs are resolved.
 This only has effect when there is an IDREF conflict.
 Instead of resolving the IDREF in document order like today, the IDREF is resolved by nearest-idscope-ancestor first, and only then in document order.
